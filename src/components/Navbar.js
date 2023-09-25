@@ -1,19 +1,21 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import "./Navbar.css";
+import { NavLink } from "react-router-dom";
+import "./Navbar.scss";
 function Navbar() {
   return (
     <nav className="navbar">
       <div>
-        <img src="logo-kasa.png" class="logo-kasa" alt="Logo du site Kasa"/>
+        <NavLink to="/">
+          <img src="logo-kasa.png" class="logo-kasa" alt="Logo du site Kasa"/>
+        </NavLink>
       </div>
       <div class="buttons-menu">
-        <Link to="/">
-          <div class="link-menu">Accueil</div>
-        </Link>
-        <Link to="/about">
-          <div class="link-menu">A Propos</div>
-        </Link>
+        <NavLink to="/">
+          <div>Accueil</div>
+        </NavLink>
+        <NavLink to="/about">
+          <div>A Propos</div>
+        </NavLink>
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@ import Banner from "./components/Banner.js";
 import Card from "./components/Card.js";
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

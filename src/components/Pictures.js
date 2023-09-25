@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pictures.css";
+import "./Pictures.scss";
 import {Link} from "react-router-dom";
 
 function Pictures() {

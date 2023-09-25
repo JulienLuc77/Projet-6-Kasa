@@ -1,0 +1,33 @@
+.navbar{
+  align-items: center;
+  padding: 0 2rem;
+  color: #ff6060;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  & a {
+  text-decoration: none;
+  color: #ff6060 ;
+   &.active{
+  text-decoration: underline;
+      }
+  &:hover{
+  text-decoration: underline;
+      }
+  & > *:first-child{
+  margin-right: auto;
+      }
+   }
+  }
+.logo-kasa{
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.buttons-menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 305px;
+}
+

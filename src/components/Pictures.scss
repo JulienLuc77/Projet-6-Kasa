@@ -6,14 +6,19 @@
   align-items: end;
   min-width: 200px;
   min-height: 200px;
+  & a {
+    text-decoration: none;
+  }
 }
+
+
 @media screen and ( width <= 768px ) {
  .pictures{
   flex-basis: 100%;
-  
+
+  .pictures_title{
+    width: 50%;
+    color: white;
+  }
  }
-}
-.pictures_title{
-  width: 50%;
-  color: white;
 }

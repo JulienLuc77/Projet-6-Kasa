@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -8,7 +8,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter ([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <h1>404</h1>
   },
   {
     path: "/appartment",
@@ -17,10 +18,6 @@ const router = createBrowserRouter ([
   {
     path: "/about",
     element: <h1>A Propos</h1>
-  },
-  {
-    path: "/error",
-    element: <h1>404</h1>
   }
 ]);
 

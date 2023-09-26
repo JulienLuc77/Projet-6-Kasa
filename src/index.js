@@ -8,6 +8,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Apartment from './pages/Apartment';
+import About from './pages/About';
+import Error from './pages/Error';
 
 const HeaderFooterLayout = () => {
  return <>
@@ -21,7 +23,7 @@ const HeaderFooterLayout = () => {
 const router = createBrowserRouter ([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <h1>404</h1>,
+    errorElement: <Error/>,
     children: [
       {
         path: "/",
@@ -33,7 +35,7 @@ const router = createBrowserRouter ([
       },
       {
         path: "/about",
-        element: <h1>A Propos</h1>
+        element: <About />
       },
     ],
   },

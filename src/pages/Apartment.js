@@ -1,5 +1,6 @@
 import React from "react";
 import "./Apartment.scss";
+import Description from "../components/Description";
 
 function Apartment () {
   return (
@@ -14,28 +15,29 @@ function Apartment () {
         <div className="apartment-tags">
           <span className="apartment-tag">Cozy</span>
           <span className="apartment-tag">Canal</span>
-          <span className="apartment-tag">Paris</span>
+          <span className="apartment-tag">Paris 10</span>
         </div>
       </div>
-      <div className="apartment-owner" >
-        <h3>Alexandre Dumas</h3>
-        <div className="apartment-badge"></div>
+      <div className="apartment-owner">
+        <div className="apartment-details" >
+          <h3>
+            <span>Alexandre</span>
+            <span>Dumas</span>
+          </h3>
+          <div className="apartment-badge"></div>
+        </div>
         <div className="apartment-stars">
-          <span>✩</span>
-          <span>✩</span>
-          <span>✩</span>
-          <span>✩</span>
-          <span>✩</span>
+          <span className="on">🟊</span>
+          <span className="on">🟊</span>
+          <span className="on">🟊</span>
+          <span className="off">🟊</span>
+          <span className="off">🟊</span>
         </div>
       </div>
     </div>
-    <div className="apartment-description">
-     <p>Description</p>
-     <p>....</p>
-    </div>
-    <div className="apartment-description">
-     <p>Description</p>
-     <p>....</p>
+    <div className="apartment-area">
+    <Description />
+    <Description />
     </div>
   </div>
   );

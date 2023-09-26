@@ -1,0 +1,37 @@
+
+.apartment-description{
+  margin-bottom: 1rem;
+  p{
+    margin-block: 0em;
+    font-size: 20px;
+  }
+  .description{
+    background-color: #ff6060;
+    color: white;
+    padding-block: 0.7rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content{
+    position: relative;
+    top: -0.3rem;
+    z-index: -1;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .fa-chevron-up{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+.apartment-area{
+  display: flex;
+  gap: 1rem;
+  @media screen and (width <= 768px) {
+    flex-direction: column;;
+  }
+}

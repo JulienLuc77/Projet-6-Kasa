@@ -1,0 +1,14 @@
+.image-banner{
+  background-image: url(../photo-paysage.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  max-width: 100%;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  top: 50px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,19 @@
+.error-title{
+text-align: center;
+color: #ff6060;
+font-size: 200px;
+margin-bottom: 2.5rem;
+}
+.error-subtitle{
+  text-align: center;
+  color: #ff6060;
+  margin-bottom: 4rem;
+  font-weight: 200;
+}
+.error-link{
+  text-align: center;
+  color: #ff6060;
+  &:hover{
+    text-decoration: underline;
+  }
+}

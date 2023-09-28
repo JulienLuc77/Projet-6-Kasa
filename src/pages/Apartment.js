@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Apartment.scss";
 import Description from "../components/Description";
+import { useLocation } from "react-router-dom";
 
 function Apartment () {
+  const location = useLocation();
+  const [selectedApartment, setSelectedApartement] = useState(null);
+  useEffect(fetchApartmentData,[]);
+
+  function fetchApartmentData () {
+    fetch("db.json")
+    .then((res) => res.json())
+    .then((apartment) => {
+      const selectedApartment = apartment.filter((apartment) => apartment.id === location.state.apartmentId)[0];
+      setSelectedApartement (selectedApartment);
+    })
+  }
   return (
   <div className="apartment">
     <div>

@@ -9,7 +9,7 @@ function Navbar() {
           <img src="logo-kasa.png" class="logo-kasa" alt="Logo du site Kasa"/>
         </NavLink>
       </div>
-      <div class="buttons-menu">
+      <div className="buttons-menu">
         <NavLink to="/">
           <div>Accueil</div>
         </NavLink>

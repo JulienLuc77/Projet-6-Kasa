@@ -9,6 +9,11 @@
     }
     .apartment-title{
       flex-grow: 1;
+      color: #ff6060;
+      h2{
+        font-weight: 100;
+        font-size: 18px;
+      }
     }
     .apartment-owner{
       display: flex;
@@ -21,6 +26,7 @@
     .apartment-details{
       display: flex;
       gap: 0.5rem;
+      color: #ff6060;
       @media screen and (width <= 768px) {
         order: 1;
       }
@@ -59,7 +65,7 @@
     span {
       background-color: #ff6060;
       color: white;
-      padding: 0.3em 1em;
+      padding: 0.3em 0.5em;
       border-radius: 0.7rem;
       text-align: center;
     }

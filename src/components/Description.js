@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Description.scss";
 
-export function Description (props) {
-  return (
+export function Description(props) {
+  const [isContentVisible, setIsContentVisible] = useState(false);
 
-      <div className="apartment-description">
+  const toggleContent = () => {
+    setIsContentVisible(!isContentVisible);
+  };
+
+  const chevronClass = isContentVisible ? "fa-chevron-down" : "fa-chevron-up";
+
+  return (
+    <div className="apartment-description">
       <p className="description">
-      <span>{props.title}</span>
-      <span><i className="fa-solid fa-chevron-up"></i></span>
-        </p>
-        <p className="content">{props.content}</p>
-      </div>
+        <span>{props.title}</span>
+        <span>
+          <i className={`fa-solid ${chevronClass}`} onClick={toggleContent}></i>
+        </span>
+      </p>
+      {isContentVisible && <p className="content">{props.content}</p>}
+    </div>
   );
 }
 

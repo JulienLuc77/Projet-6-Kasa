@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { ApartmentBanner } from "../components/ApartmentBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
 
-function ApartmentPage () {
+function Apartment () {
   const location = useLocation();
   const [flat, setFlat] = useState(null);
   useEffect(fetchApartmentData,[]);
@@ -22,16 +22,16 @@ function ApartmentPage () {
   if (flat == null) return <div>Loading...</div>;
   return (
    <div className="apartment">
-     <ApartmentBanner imageUrl={flat.cover} />
+     <ApartmentBanner pictures={flat.pictures} />
      <ApartmentHeader flat={flat} />
     <div className="apartment-area">
     <Description title="Description" content={flat.description}/>
-    <Description title="Equipements" content={flat.equipments.map((eq) => (
-      <li>{eq}</li>
+    <Description title="Equipements" content={flat.equipments.map((eq, i) => (
+      <li key={i}>{eq}</li>
     ))}/>
     </div>
   </div>
   );
 }
 
-export default ApartmentPage;
+export default Apartment;

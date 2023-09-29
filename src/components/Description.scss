@@ -2,9 +2,12 @@
 .apartment-description{
   margin-bottom: 1rem;
   flex-basis: 50%;
+  overflow: hidden;
+
   p{
     margin-block: 0em;
     font-size: 20px;
+    color: #ff6060;
   }
   .description{
     background-color: #ff6060;
@@ -14,7 +17,6 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    
   }
   .content{
     position: relative;
@@ -23,17 +25,37 @@
     background-color: #F6F6F6;
     border-radius: 10px;
     padding: 1rem;
+    animation: slide-in 0.3s ease-in-out;
   }
   .fa-chevron-up{
     color: white;
     font-size: 25px;
     cursor: pointer;
+    transform: rotate(0deg); 
+    transition: transform 1s ease;
+  }
+  .fa-chevron-down {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transform: rotate(1deg); 
+    transition: transform 1s ease;
   }
 }
 .apartment-area{
   display: flex;
   gap: 1rem;
+  overflow: hidden;
   @media screen and (width <= 768px) {
     flex-direction: column;
   }
+}
+
+@keyframes slide-in {
+0% {
+  transform: translateY(-100%);
+}
+100% {
+  transform: translateX(0);
+}
 }

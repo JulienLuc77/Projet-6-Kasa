@@ -1,5 +1,33 @@
-.apartment {
-  color : #ff6060;
+.apartment-banner {
+  position: relative;
+  margin-bottom: 2rem;
+  .button-previous{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+  };
+  .button-next{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+  }
+  .fa-chevron-left{
+    font-size: 60px;
+    color: white;
+  }
+  .fa-chevron-right{
+    font-size: 60px;
+    color: white;
+  }
   div:first-child{
     margin-bottom: 1rem;
   }
@@ -7,17 +35,32 @@
     font-weight: 400;
     margin-block: 0;
     margin-bottom: 0;
+    color: #ff6060;
   }
   h2 {
     font-weight: 400;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 18px;
+    color: #ff6060;
   }
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
   img{
+    position: absolute;
     width: 100%;
-    height: 20rem;
+    height: 100%;
+    inset: 0;
     object-fit: cover;
     border-radius: 1rem;
-  };
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    &.show {
+      opacity: 1;
+    };
+  }
 }
+

@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../components/Banner";
 import Description from "../components/Description";
 import './About.scss';
 import { AboutBanner } from "../components/AboutBanner";

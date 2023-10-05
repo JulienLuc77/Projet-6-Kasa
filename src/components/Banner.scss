@@ -1,22 +1,42 @@
-.banner{
-  position: relative;
-  padding-inline: 2rem;
-  background-image: url(./img-en-tête.png);
-  filter: brightness(0.8);
-  background-size: cover;
-  background-position: center;
-  min-height: 200px;
-  max-width: 100%;
-  border-radius: 1rem;
-  display: grid;
-  place-items: center;
-  color: white;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+@import '../Style.scss';
+
+.banner {
+    max-width: $max-width-body;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second-color;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 223px;
+        object-fit: cover;
+        position: relative;
+        border-radius: 25px;
+        opacity: 0.7;
+    }
+    
+    h1 {
+        color: $white;
+        position: absolute;
+        align-self: center;
+        padding: 35px;
+        font-weight: 500;
+        font-size: 45px ;
+
+    }   
 }
-.banner::before{
-  position: absolute;
-  content: "";
-  inset: 0;
-  border-radius: 1rem;
-}
+
+@media (max-width: $breakpoint-mobile) {
+    .banner {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+  }

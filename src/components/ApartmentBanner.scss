@@ -1,3 +1,4 @@
+@import '../Style.scss';
 .apartment-banner {
   position: relative;
   margin-bottom: 2rem;
@@ -22,11 +23,11 @@
   }
   .fa-chevron-left{
     font-size: 60px;
-    color: white;
+    color: $white;
   }
   .fa-chevron-right{
     font-size: 60px;
-    color: white;
+    color: $white;
   }
   div:first-child{
     margin-bottom: 1rem;
@@ -35,14 +36,14 @@
     font-weight: 400;
     margin-block: 0;
     margin-bottom: 0;
-    color: #ff6060;
+    color: $main-color;
   }
   h2 {
     font-weight: 400;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 18px;
-    color: #ff6060;
+    color: $main-color;
   }
 }
 .image-container {

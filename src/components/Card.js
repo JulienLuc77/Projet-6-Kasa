@@ -17,7 +17,7 @@ function Card() {
   return (
     <div key={""} className="card">
       {apartments.map((apartment) => (
-         <Pictures title={apartment.title} imageUrl={apartment.cover} id={apartment.id}/>
+         <Pictures key={apartment.id} title={apartment.title} imageUrl={apartment.cover} id={apartment.id}/>
       ))}
     </div>
   );

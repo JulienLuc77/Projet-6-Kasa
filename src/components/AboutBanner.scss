@@ -1,3 +1,4 @@
+@import '../Style.scss';
 .image-banner{
   background-image: url(../photo-paysage.png);
   background-size: cover;
@@ -7,7 +8,7 @@
   border-radius: 1rem;
   display: grid;
   place-items: center;
-  color: white;
+  color: $white;
   top: 50px;
   margin-bottom: 2rem;
   margin-top: 2rem;

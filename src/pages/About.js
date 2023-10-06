@@ -1,14 +1,15 @@
 import React from "react";
 import Description from "../components/Description";
 import './About.scss';
-import { AboutBanner } from "../components/AboutBanner";
-import { useParams } from "react-router-dom";
+import Flop from "../components/img/photo-paysage.png"
+import Banner from "../components/Banner";
 
 function About () {
-  const params = useParams();
+
   return (
   <>
-    <AboutBanner />
+    <Banner
+        image={Flop} alt="paysage avec montagnes et forêts"/>
     <div className="about-container">
     <Description title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
     <Description title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

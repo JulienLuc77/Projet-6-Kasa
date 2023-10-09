@@ -1,8 +1,8 @@
 import React from "react";
-import Description from "../components/Description";
+import Description from "../components/Description/Description";
 import './About.scss';
 import Flop from "../components/img/photo-paysage.png"
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner";
 
 function About () {
 

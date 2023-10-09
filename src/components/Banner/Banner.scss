@@ -1,7 +1,7 @@
-@import '../Style.scss';
+@import '/src/style/Style.scss';
 
 .banner {
-    max-width: $max-width-body;
+    max-width: 100%;
     width: 100%;
     height: auto;
     display: flex;
@@ -9,7 +9,7 @@
     align-items: center;
     background-color: $second-color;
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 40px;
 
     img {
@@ -30,11 +30,18 @@
         font-weight: 500;
         font-size: 45px ;
 
-    }   
+    }  
+    
+    
 }
 
 @media (max-width: $breakpoint-mobile) {
     .banner {
+        border-radius: 10px;
+        img{
+            height: 100px;
+            border-radius: 10px;
+        }
         h1 {
             font-size: 1.5rem;
         }

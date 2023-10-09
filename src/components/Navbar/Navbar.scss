@@ -1,4 +1,4 @@
-@import '../Style.scss';
+@import '/src/style/Style.scss';
 .navbar{
   align-items: center;
   padding: 0 2rem;
@@ -28,11 +28,34 @@
   width: 60%;
   margin-top: 20px;
   margin-left: 20px;
+
+  @media screen and (width <= 768px) {
+    width: 20vw;
+    max-width: 26vw;
+    min-width: 26vw;
+  }
+
 }
 .buttons-menu{
   display: flex;
   align-items: center;
   gap: 3rem;
-  width: 305px;
+  width: 260px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+
+  @media screen and (width <= 511px) {
+    font-size: 10px;
+    width: 140px;
+    gap: 1.2rem;
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 511px) and (max-width: 768px) {
+    font-size: 13px;
+    width: 170px;
+    gap: 1.2rem;
+    margin-top: 15px;
+  }
 }
 

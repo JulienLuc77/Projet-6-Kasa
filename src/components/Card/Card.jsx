@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Card.scss";
-import Pictures from "./Pictures";
+import Pictures from "../Pictures/Pictures";
 
 function Card() {
   const [apartments, setApartments] = useState ([]);

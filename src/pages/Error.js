@@ -1,9 +1,9 @@
 import React from "react";
 import "./Error.scss";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
+import Main from "../components/Main/Main";
+import Footer from "../components/Footer/Footer";
 
 export function Error () {
   return <>

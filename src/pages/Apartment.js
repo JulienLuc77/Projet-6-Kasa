@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Apartment.scss";
-import Description from "../components/Description";
+import Description from "../components/Description/Description";
 import { useLocation } from "react-router-dom";
-import { ApartmentBanner } from "../components/ApartmentBanner";
-import { ApartmentHeader } from "../components/ApartmentHeader";
+import { ApartmentBanner } from "../components/Apartment Banner/ApartmentBanner";
+import { ApartmentHeader } from "../components/Header/ApartmentHeader";
 
 function Apartment () {
   const location = useLocation();

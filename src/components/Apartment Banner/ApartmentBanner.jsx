@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ApartmentBanner.scss";
+import "../Apartment Banner/ApartmentBanner.scss";
 
 export function ApartmentBanner (props) {
   const pictures = props.pictures;

@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
 import Apartment from './pages/Apartment';
 import About from './pages/About';
 import Error from './pages/Error';

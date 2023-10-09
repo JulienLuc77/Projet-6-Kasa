@@ -19,7 +19,7 @@ function Apartment () {
     })
     .catch(console.error);
   }
-  if (flat == null) return <div>Loading...</div>;
+  if (flat == null) return <div>Chargement...</div>;
   return (
    <div className="apartment">
      <ApartmentBanner pictures={flat.pictures} />

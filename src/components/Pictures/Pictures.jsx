@@ -6,7 +6,7 @@ function Pictures(props) {
   return (
     <div className="pictures">
       <Link
-        to="/flat"
+        to="/rent"
         state={{
           apartmentId: props.id,
         }}

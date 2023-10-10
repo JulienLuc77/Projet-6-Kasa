@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Apartment.scss";
-import Description from "../components/Description/Description";
+import Collapse from "../components/Collapse/Collapse";
 import { useLocation } from "react-router-dom";
-import { ApartmentBanner } from "../components/Apartment Banner/ApartmentBanner";
+import { Carousel } from "../components/Carousel/Carousel";
 import { ApartmentHeader } from "../components/Header/ApartmentHeader";
 
 function Apartment () {
@@ -22,11 +22,11 @@ function Apartment () {
   if (flat == null) return <div>Chargement...</div>;
   return (
    <div className="apartment">
-     <ApartmentBanner pictures={flat.pictures} />
+     <Carousel pictures={flat.pictures} />
      <ApartmentHeader flat={flat} />
     <div className="apartment-area">
-    <Description title="Description" content={flat.description}/>
-    <Description title="Equipements" content={flat.equipments.map((eq, i) => (
+    <Collapse title="Description" content={flat.description}/>
+    <Collapse title="Equipements" content={flat.equipments.map((eq, i) => (
       <li key={i}>{eq}</li>
     ))}/>
     </div>

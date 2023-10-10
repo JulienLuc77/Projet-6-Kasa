@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../Apartment Banner/ApartmentBanner.scss";
+import "../Carousel/Carousel.scss";
 
-export function ApartmentBanner (props) {
+export function Carousel (props) {
   const pictures = props.pictures;
   const [currentPicture, setCurrentPicture] = useState(0);
   const getClassName = (i) => {

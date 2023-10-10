@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Description.scss";
+import "./Collapse.scss";
 
-export function Description(props) {
+export function Collapse(props) {
   const [isContentVisible, setIsContentVisible] = useState(false);
 
   const toggleContent = () => {
@@ -23,4 +23,4 @@ export function Description(props) {
   );
 }
 
-export default Description;
+export default Collapse;

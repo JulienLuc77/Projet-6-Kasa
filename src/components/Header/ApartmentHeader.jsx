@@ -1,4 +1,5 @@
 import React from "react";
+import RatingStars from "../Stars/Stars";
 import "./ApartmentHeader.scss";
 
 export function ApartmentHeader (props) {
@@ -27,9 +28,8 @@ const [firstName, lastName] = name.split(" ");
       <img src={flat.host.picture} alt="" />
     </div>
   </div>
-  <div className="apartment-stars">
-
-   {[1, 2, 3, 4, 5].map ((num)=> <span key={num} className={props.flat.rating >= num ? "on" : ""}>🟊</span>)}
+  <div className="stars">
+  <RatingStars rating={flat.rating} />
   </div>
 </div>
 </div>

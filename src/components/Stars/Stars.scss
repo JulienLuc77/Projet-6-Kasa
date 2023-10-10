@@ -1,0 +1,16 @@
+@import '/src/style/Style.scss';
+.apartment-stars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cfcfcf;
+  * {
+    font-size: 2rem;
+    @media screen and (width <= 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  .on{
+    color: $main-color;
+  }
+}

@@ -25,14 +25,13 @@
    }
   }
 .logo-kasa{
-  width: 60%;
+  width: 70%;
   margin-top: 20px;
   margin-left: 20px;
 
   @media screen and (width <= 768px) {
-    width: 20vw;
-    max-width: 26vw;
-    min-width: 26vw;
+   width: 160px;
+    margin-left: -20px;
   }
 
 }
@@ -46,7 +45,7 @@
   margin-top: 20px;
 
   @media screen and (width <= 511px) {
-    font-size: 10px;
+    font-size: 12px;
     width: 140px;
     gap: 1.2rem;
     margin-top: 15px;

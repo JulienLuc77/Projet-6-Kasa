@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar">
       <div>
         <NavLink to="/">
-          <img src="logo-kasa.png" className="logo-kasa" alt="Logo du site Kasa"/>
+          <img src="/logo-kasa.png" className="logo-kasa" alt="Logo du site Kasa"/>
         </NavLink>
       </div>
       <div className="buttons-menu">

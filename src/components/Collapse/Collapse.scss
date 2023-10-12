@@ -58,7 +58,7 @@
 }
 .apartment-area{
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   overflow: hidden;
   @media screen and (width <= 768px) {
     flex-direction: column;
